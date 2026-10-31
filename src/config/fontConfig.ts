@@ -26,12 +26,13 @@ import type { FontDefinition, FontSelectionConfig } from "@/types/fontConfig";
 // ─── Astro Font API 字体定义 ───────────────────────────────
 // 适用于 Astro Font API 的字体配置，支持自动下载、缓存和优化加载
 // 本地开发调试的情况下，修改后需要每次重启开发服务器才能生效
+// 默认字体从已安装的 @fontsource/* 包读取，避免启动和构建依赖字体 CDN。
 export const fontsList: FontDefinition[] = [
 	{
 		name: "Zen Maru Gothic",
 		cssVariable: "--font-zen-maru-gothic",
-		provider: "fontsource",
-		weights: ["300", "400", "500", "600", "700"],
+		provider: "npm",
+		weights: ["300", "400", "500", "700"],
 		styles: ["normal"],
 		subsets: ["latin", "cyrillic"],
 		fallbacks: ["sans-serif"],
@@ -39,7 +40,7 @@ export const fontsList: FontDefinition[] = [
 	{
 		name: "Inter",
 		cssVariable: "--font-inter",
-		provider: "fontsource",
+		provider: "npm",
 		weights: ["300", "400", "500", "600", "700"],
 		styles: ["normal"],
 		subsets: ["latin", "cyrillic"],
@@ -48,7 +49,7 @@ export const fontsList: FontDefinition[] = [
 	{
 		name: "JetBrains Mono",
 		cssVariable: "--font-jetbrains-mono",
-		provider: "fontsource",
+		provider: "npm",
 		weights: ["400", "700"],
 		styles: ["normal"],
 		subsets: ["latin", "cyrillic"],
