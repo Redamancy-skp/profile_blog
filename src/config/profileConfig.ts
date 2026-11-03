@@ -41,7 +41,7 @@ export const profileConfig: ProfileConfig = {
 		},
 		{
 			name: "Atom",
-			icon: "fa7-solid:bilibili",
+			icon: "fa7-solid:atom",
 			url: "/atom/",
 			showName: false,
 		},
