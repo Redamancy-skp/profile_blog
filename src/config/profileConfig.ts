@@ -24,13 +24,13 @@ export const profileConfig: ProfileConfig = {
 		{
 			name: "GitHub",
 			icon: "fa7-brands:github",
-			url: "https://github.com/CuteLeaf",
+			url: "https://github.com/Redamancy-skp",
 			showName: false,
 		},
 		{
 			name: "Email",
 			icon: "fa7-solid:envelope",
-			url: "mailto:xiaye@msn.com",
+			url: "skpjiayou@outlook.com",
 			showName: false,
 		},
 		{
@@ -41,7 +41,7 @@ export const profileConfig: ProfileConfig = {
 		},
 		{
 			name: "Atom",
-			icon: "fa7-solid:atom",
+			icon: "fa7-solid:bilibili",
 			url: "/atom/",
 			showName: false,
 		},
